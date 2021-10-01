@@ -21,7 +21,8 @@
 #include <windows.h>
 #endif
 
-#if defined __unix__ || defined __APPLE__ || defined __FreeBSD__
+#if defined __unix__ || defined __APPLE__ || defined __FreeBSD__ || \
+    defined __Fuchsia__
 #include <unistd.h>
 #include <sys/mman.h>
 #endif
